@@ -1,2 +1,4 @@
-# cloud-cli-seu
-A software development environment that contains the most relevant Cloud and IaC CLI tools.
+# Cloud and IaC CLI SEU
+
+A dev container based environment that contains the most useful Cloud and IaC CLI tools.
+

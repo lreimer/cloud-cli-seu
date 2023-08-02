@@ -1,0 +1,18 @@
+{
+    "name": "Cloud and IaC Dev Container",
+
+    "features": {
+        "ghcr.io/devcontainers/features/common-utils:2": {
+            "configureZshAsDefaultShell": "true"
+        },
+        "ghcr.io/devcontainers/features/aws-cli:1": {
+            "version": "2.13.5"
+        },
+        "ghcr.io/devcontainers/features/terraform:1": {
+            "version": "1.5.4",
+            "tflint": "0.47.0",
+            "terragrunt": "0.48.5"
+        }
+    }
+
+}
