@@ -1,6 +1,8 @@
 {
     "name": "Cloud and IaC Dev Container",
-    "image": "mcr.microsoft.com/devcontainers/base:0-ubuntu",
+    
+    // "image": "mcr.microsoft.com/devcontainers/base:0-debian",
+    "build": { "dockerfile": "Dockerfile" },
 
     "features": {
         "ghcr.io/devcontainers/features/common-utils:2": {
@@ -13,5 +15,13 @@
         "ghcr.io/devcontainers/features/terraform:1": {}
     },
 
-    "remoteUser": "vscode"
+	"remoteUser": "vscode",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"GoogleCloudTools.cloudcode",
+				"ms-azuretools.vscode-docker"
+			]
+		}
+	}
 }
