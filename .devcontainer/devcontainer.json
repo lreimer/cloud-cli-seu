@@ -1,18 +1,17 @@
 {
     "name": "Cloud and IaC Dev Container",
+    "image": "mcr.microsoft.com/devcontainers/base:0-ubuntu",
 
     "features": {
         "ghcr.io/devcontainers/features/common-utils:2": {
-            "configureZshAsDefaultShell": "true"
+            "configureZshAsDefaultShell": "true",
+            "username": "vscode",
+            "uid": 1001,
+            "gid": 1001
         },
-        "ghcr.io/devcontainers/features/aws-cli:1": {
-            "version": "2.13.5"
-        },
-        "ghcr.io/devcontainers/features/terraform:1": {
-            "version": "1.5.4",
-            "tflint": "0.47.0",
-            "terragrunt": "0.48.5"
-        }
-    }
+        "ghcr.io/devcontainers/features/aws-cli:1": {},
+        "ghcr.io/devcontainers/features/terraform:1": {}
+    },
 
+    "remoteUser": "vscode"
 }
